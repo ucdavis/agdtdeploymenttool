@@ -239,7 +239,7 @@ class SecondViewController: NSViewController {
             print("Recipt Not Removed: \(error)")
         }
         
-        fileManager.createFile(atPath: "/Library/Application Support/JAMF/.AggieDesktopDeploymenttComplete", contents: nil, attributes: nil)
+        fileManager.createFile(atPath: "/Library/Application Support/JAMF/.AggieDesktopDeploymentComplete", contents: nil, attributes: nil)
         
         // Performs View Segue to the Web View
         performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "segue2"), sender: self)
